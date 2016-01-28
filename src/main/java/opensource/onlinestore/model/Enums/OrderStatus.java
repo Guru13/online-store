@@ -5,5 +5,15 @@ package opensource.onlinestore.model.Enums;
  */
 public enum OrderStatus {
 
-    BUCKET, ACCEPTED, COLLECTED, FINISHED
+    BUCKET("bucket"), ACCEPTED("accepted"), COLLECTED("collected"), FINISHED("finished");
+
+    private String value;
+
+    OrderStatus(String value){
+        this.value = value;
+    }
+
+    private String getValue(){
+        return value;
+    }
 }
